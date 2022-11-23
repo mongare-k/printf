@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 
 	for (i = 0; p[ui].t != NULL; i++)
 	{
-		if (*p[i].t) == *format)
+		if (*(p[i].t) == *format)
 		{
 			break;
 		}

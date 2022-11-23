@@ -11,21 +11,10 @@
 int _printf(const char *format, ...)
 {
 	unsigned int i;
-	print_t p[] = {
 
-		{"c", print_c},
-		{"s", print_s},
-		{"%", print_%},
-		{NULL, NULL}
-	};
+	_printf("%c\n", H);
+	_printf("%s\n", String);
+	_printf("%%\n", %);
 
-	for (i = 0; p[ui].t != NULL; i++)
-	{
-		if (*(p[i].t) == *format)
-		{
-			break;
-		}
-	}
-
-	return (p[i].f);
+	return (0);
 }
